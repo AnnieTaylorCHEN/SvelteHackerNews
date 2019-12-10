@@ -1,7 +1,7 @@
 <script>
 import Comment from "./../components/Comment.svelte"
 export let id;
-let promise = fetch(`http://node-hnapi.herokuapp.com/item/${id}`).then(res => res.json());
+let promise = fetch(`https://node-hnapi.herokuapp.com/item/${id}`).then(res => res.json());
 </script>
 
 {#await promise}
